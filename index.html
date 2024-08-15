@@ -17,19 +17,19 @@
         <input type="checkbox" id="toggle" class="toggle-checkbox">
         <label for="toggle" class="toggle-label">
             <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z"/>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z" />
             </svg>
             <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" viewBox="0 0 24 24" style="display:none;">
-                <path d="M6.76 4.84l-1.8-1.79L2.5 5.49l1.79 1.79 2.47-2.44zM1 13h4v-2H1v2zm10-10h2V1h-2v2zm7.24 2.06l2.47 2.44 1.79-1.79-2.46-2.44-1.8 1.79zM13 23h-2v-4h2v4zm9-10h-4v-2h4v2zm-4.66 6.92l-2.46 2.44 1.79 1.79 2.47-2.44-1.8-1.79zM11 5.99c0 2.76 2.24 5 5 5s5-2.24 5-5-2.24-5-5-5-5 2.24-5 5zm-4.41 8.93c-.59-.59-.59-1.54 0-2.12.58-.59 1.53-.59 2.12 0 .59.59.59 1.54 0 2.12-.58.58-1.54.58-2.12 0zm14.83 2.12c-.58-.58-1.53-.58-2.12 0-.59.59-.59 1.54 0 2.12.59.58 1.54.58 2.12 0 .59-.59.59-1.54 0-2.12z"/>
+                <path d="M6.76 4.84l-1.8-1.79L2.5 5.49l1.79 1.79 2.47-2.44zM1 13h4v-2H1v2zm10-10h2V1h-2v2zm7.24 2.06l2.47 2.44 1.79-1.79-2.46-2.44-1.8 1.79zM13 23h-2v-4h2v4zm9-10h-4v-2h4v2zm-4.66 6.92l-2.46 2.44 1.79 1.79 2.47-2.44-1.8-1.79zM11 5.99c0 2.76 2.24 5 5 5s5-2.24 5-5-2.24-5-5-5-5 2.24-5 5zm-4.41 8.93c-.59-.59-.59-1.54 0-2.12.58-.59 1.53-.59 2.12 0 .59.59.59 1.54 0 2.12-.58.58-1.54.58-2.12 0zm14.83 2.12c-.58-.58-1.53-.58-2.12 0-.59.59-.59 1.54 0 2.12.59.58 1.54.58 2.12 0 .59-.59.59-1.54 0-2.12z" />
             </svg>
         </label>
     </div>
 
     <!-- Header / Hero Section with Fullscreen Parallax -->
-    <header id="hero">
+    <header id="hero" class="animate-on-scroll">
         <div class="hero-bg"></div>
         <div class="hero-content">
-            <img src="images/avatar.jpg" alt="Yaseen Rahman" class="avatar">
+            <img src="images/fulls/profile picture.jpeg" alt="Yaseen Rahman" class="avatar">
             <h1>Yaseen Rahman</h1>
             <p>Crafting immersive, dynamic digital experiences</p>
             <a href="#projects" class="btn">Explore My Work</a>
@@ -37,7 +37,7 @@
         <div class="scroll-indicator">
             <span>Scroll Down</span>
             <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" width="24" height="24">
-                <path d="M7 10l5 5 5-5H7z"/>
+                <path d="M7 10l5 5 5-5H7z" />
             </svg>
         </div>
     </header>
@@ -53,9 +53,11 @@
     </nav>
 
     <!-- About Section with Background Image -->
-    <section id="about" class="section">
+    <section id="about" class="section animate-on-scroll">
         <div class="container about-container">
-            <div class="about-image"></div>
+            <div class="about-image">
+				<img src="images/thumbs/06.jpg" alt="Project 1">
+			</div>
             <div class="about-text">
                 <h2>About Me</h2>
                 <p>
@@ -66,11 +68,11 @@
     </section>
 
     <!-- Projects Section with Full Width Cards -->
-    <section id="projects" class="section">
+    <section id="projects" class="section animate-on-scroll">
         <div class="container">
             <h2>Featured Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card animate-on-scroll">
                     <img src="images/thumbs/01.jpg" alt="Project 1">
                     <div class="project-overlay">
                         <h3>Innovative Web Platform</h3>
@@ -78,7 +80,7 @@
                         <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card animate-on-scroll">
                     <img src="images/thumbs/02.jpg" alt="Project 2">
                     <div class="project-overlay">
                         <h3>Responsive E-Commerce Site</h3>
@@ -86,7 +88,7 @@
                         <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card animate-on-scroll">
                     <img src="images/thumbs/03.jpg" alt="Project 3">
                     <div class="project-overlay">
                         <h3>Custom Web Application</h3>
@@ -94,7 +96,7 @@
                         <a href="#" class="btn">View Project</a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card animate-on-scroll">
                     <img src="images/thumbs/04.jpg" alt="Project 4">
                     <div class="project-overlay">
                         <h3>Games</h3>
@@ -107,15 +109,27 @@
     </section>
 
     <!-- Contact Section with Form and Background Image -->
-    <section id="contact" class="section">
+    <section id="contact" class="section animate-on-scroll">
         <div class="container contact-container">
             <div class="contact-info">
                 <h2>Let's Connect</h2>
                 <p>I'm available for freelance work or collaboration on exciting projects. Let's create something amazing together!</p>
                 <ul>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z"/></svg> Barnet, New Southgate, London, UK</li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z"/></svg> +44 7412 887779</li>
-                    <li><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z"/></svg> <a href="mailto:Rahman.yaseen27@gmail.com">Rahman.yaseen27@gmail.com</a></li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z" />
+                        </svg> Barnet, New Southgate, London, UK
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z" />
+                        </svg> +44 7412 887779
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z" />
+                        </svg>Rahman.yaseen27@gmail.com</a>
+                    </li>
                 </ul>
             </div>
             <div class="contact-form">
@@ -146,10 +160,18 @@
     <footer id="footer">
         <div class="inner">
             <ul class="icons">
-                <li><a href="https://www.linkedin.com/in/yaseenrahman/" class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" width="24" height="24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z"/></svg></a></li>
-                <li><a href="https://github.com/Yx533n" class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" width="24" height="24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z"/></svg></a></li>
-                <li><a href="assets/Yaseen Rahman Curriculum Vitae. .pdf" class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" width="24" height="24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z"/></svg></a></li>
-                <li><a href="#contact" class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" width="24" height="24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z"/></svg></a></li>
+                <li><a href="https://www.linkedin.com/in/yaseenrahman/" class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z" />
+                        </svg></a></li>
+                <li><a href="https://github.com/Yx533n" class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z" />
+                        </svg></a></li>
+                <li><a href="assets/Yaseen Rahman Curriculum Vitae. .pdf" class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z" />
+                        </svg></a></li>
+                <li><a href="#contact" class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zM7.25 16.81C4.96 15.14 4.46 11.79 5.72 9.38 6.17 8.43 7.26 7.99 8.24 8.39c.99.4 1.43 1.5 1.03 2.48-.5 1.23-.44 2.56.17 3.67.56 1.01 1.5 1.76 2.58 2.17 1.22.45 2.62.34 3.74-.3.68-.39 1.52-.04 1.75.68.34 1.09.31 2.35-.2 3.41-.38.87-1.27 1.47-2.25 1.54-3.57.27-6.7-2.34-7.93-5.7-.09-.24-.3-.4-.55-.43z" />
+                        </svg></a></li>
             </ul>
             <p>&copy; 2024 Yaseen Rahman. All rights reserved.</p>
         </div>
