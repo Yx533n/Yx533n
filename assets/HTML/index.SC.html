@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SudusCuisine - Caribbean Flavors</title>
+    <link rel="stylesheet" href="Assets/CSS/Main.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to SudusCuisine</h1>
+            <p>Experience the finest Caribbean flavors</p>
+            <a href="#menu" class="cta-button">View Menu</a>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <p>SudusCuisine brings you authentic Caribbean tastes with a modern twist. Our ghost kitchen concept ensures the highest quality takeaway experience.</p>
+        </section>
+
+        <section id="menu" class="menu">
+            <h2>Our Menu</h2>
+            <div id="dishes-section" class="menu-section">
+                <h3>Dishes</h3>
+                <!-- Dishes items will be dynamically added here -->
+            </div>
+            <div id="desserts-section" class="menu-section">
+                <h3>Desserts</h3>
+                <!-- Dessert items will be dynamically added here -->
+            </div>
+            <div id="koolAid-section" class="menu-section">
+                <h3>Kool-Aid</h3>
+                <!-- Kool-Aid items will be dynamically added here -->
+            </div>
+        </section>
+
+        <section id="order" class="order">
+            <h2>Place Your Order</h2>
+            <form id="order-form">
+                <div id="order-items"></div>
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Your Phone" required>
+                <textarea name="address" placeholder="Delivery Address" required></textarea>
+                <button type="submit">Submit Order</button>
+            </form>
+            <div id="paypal-button-container"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 SudusCuisine. All rights reserved.</p>
+    </footer>
+
+    <script src="Assets/JS/Main.js"></script>
+</body>
+</html>
